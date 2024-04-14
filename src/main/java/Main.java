@@ -318,8 +318,8 @@ public class Main {
                 int amt = resultSet.getInt("amount_payed");
                 int mid = resultSet.getInt("member_id");
                 System.out.println("Billing ID: " + bid);
-                System.out.println("Member ID: " + amt);
-                System.out.println("Amount Payed: $" + mid + ".00");
+                System.out.println("Member ID: " + mid);
+                System.out.println("Amount Payed: $" + amt + ".00");
             }
             resultSet.close();
             statement.close();
@@ -352,7 +352,7 @@ public class Main {
     public static void main(String[] args) {
 
         // Please change these fields as necessary!
-        String url = "jdbc:postgresql://localhost:5432/ProjTest";
+        String url = "jdbc:postgresql://localhost:5432/projecttest";
         String user = "postgres";
         String pword = "poplop123";
 
